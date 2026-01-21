@@ -1,6 +1,6 @@
 <?php
 require_once 'birthday_cards.php';
-require_once '/root/helpers.php'; // функция определения пола
+require_once 'helpers.php'; // функция определения пола
 
 // Собираем всех именинников (с именем и фамилией)
 function collectBirthdays($users, $today) {
