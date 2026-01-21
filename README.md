@@ -6,33 +6,43 @@
 поздравления с помощью Yandex GPT и отправляет их в общий чат Битрикс24 вместе с праздничными открытками.
 
 ##  **Основные модули PHP 8.2, используемые в проекте:**
+
 cURL - для выполнения HTTP-запросов к API Bitrix24 и Yandex GPT:
     Используется в user_functions.php, greeting_functions.php, disk_functions.php
     Функции: curl_init(), curl_setopt(), curl_exec(), curl_close()
+    
 JSON - для обработки JSON-данных:
     Используется во всех файлах для работы с API
     Функции: json_decode(), json_encode()
+    
 Multibyte String (mbstring) - для работы с UTF-8 строками:
     Используется в helpers.php для определения пола по имени
     Функции: mb_strtolower(), mb_substr(), mb_strlen()
+    
 File System - для работы с файлами:
     Используется в disk_functions.php
     Функции: file_get_contents(), file_exists()
+    
 Base64 - для кодирования содержимого файлов:
     Используется в disk_functions.php
     Функции: base64_encode()
+    
 HTTP Functions - для выполнения HTTP-запросов:
     Используется в message_functions.php, chat_functions.php
     Функции: file_get_contents() с контекстом потока
+    
 Date/Time - для работы с датами:
     Используется в main.php, birthday_functions.php
     Функции: date(), strtotime()
+    
 Error Handling - для логирования ошибок:
     Используется во всех файлах
     Функции: error_log(), error_get_last()
+    
 Внешние зависимости:
     Bitrix24 REST API - для работы с пользователями и чатами
     Yandex GPT API - для генерации персонализированных поздравлений
+    
 
 
 ## Основные функции
